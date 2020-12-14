@@ -30,7 +30,11 @@ const Layout = ({ children }) => {
       <main>
         <Container className="p-3">{children}</Container>
       </main>
-      
+      <footer className="footer py-3">
+        <i class="fab fa-facebook-f mr-3"></i>
+        <i class="fab fa-instagram-square mr-3"></i>
+        <i class="fas fa-envelope-open"></i>
+      </footer>
     </>
   );
 };

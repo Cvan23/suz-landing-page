@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "mike wakerly <opensource@hoho.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.4.1",
     "bootswatch": "^4.4.1",
     "gatsby": "^2.20.12",

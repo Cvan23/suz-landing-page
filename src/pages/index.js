@@ -12,7 +12,7 @@ import mfl2 from "../images/mfl-2.jpg";
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <Card>
+    <Card className="mt-5">
       <Card.Body>
         <a href="https://www.amazon.com/gp/product/0997094222" target="-blank">
         <Card.Header className="btn btn-outline-success" as="h5">

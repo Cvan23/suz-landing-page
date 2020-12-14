@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Basic Bootstrap Starter`,
-    description: `A simple Gatsby starter leveraging react-bootstrap and little else.`,
+    title: `My Favorite Letter`,
+    description: `The Alphabet Comes Alive!`,
     author: `@mik3y`,
   },
   plugins: [
