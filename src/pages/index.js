@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Jumbotron, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import {graphql} from "gatsby";

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `My Favorite Letter`,
     description: `The Alphabet Comes Alive!`,
-    author: `@mik3y`,
+    author: `Susan Gilpin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mfl-1.jpg`, // This path is relative to the root of the site.
       },
     },
     {

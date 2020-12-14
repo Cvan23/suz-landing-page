@@ -11,14 +11,21 @@ const Header = ({ siteTitle }) => (
       <Nav className="mr-auto">
         <NavItem href="/about">
           <Nav.Link as={Link} activeClassName="active" to="/about">
-            <h3 className="ml-3">About</h3>
+            <h3 className="ml-2">About</h3>
           </Nav.Link>
         </NavItem>
       </Nav>
       <Nav className="ml-auto">
         <NavItem>
-        <i class="fab fa-facebook-f mr-3"></i>
-        <i class="fab fa-instagram-square mr-5"></i>
+          <a class="btn btn-social-icon btn-google" href="https://www.facebook.com/possibilitylady/" target="-blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://www.facebook.com/susan.gilpin.12" target="-blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://www.instagram.com/skgpdx/" target="-blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>
         </NavItem>
       </Nav>
     
