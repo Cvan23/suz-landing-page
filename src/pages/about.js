@@ -1,12 +1,13 @@
 import React from "react";
-import { Col, Row, Card, ListGroup } from "react-bootstrap";
+import { Col, Row, Card } from "react-bootstrap";
+import {graphql} from 'gatsby';
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/image";
-import mfl3 from "../images/mfl-3.jpg";
-import mfl4 from "../images/mfl-4.jpg";
+import Img from "gatsby-image";
 
-const AboutPage = () => (
+
+
+const AboutPage = ({data}) => (
   <Layout>
     <SEO title="About" />
     <Row>
@@ -19,10 +20,18 @@ const AboutPage = () => (
         <Card className="mt-5">
           <Card.Body>
             <Card.Header as="h5">My Favorite Letter: The Alphabet Comes Alive!</Card.Header>
-            <Card.Img variant="bottom" src={mfl3} />
+            <Img 
+              fluid={data.mfl3GatsbyImage.childImageSharp.fluid}
+              alt="My Favorite Letter A"
+              />
             <Card.Text className="mt-3">
               Do the letters of the alphabet have personalities? Do they make you feel a certain way? Why do you like some and not others? With wonderful illustrations for each letter, My Favorite Letter answers these questions and describes the alphabet in a fun, new way. Its playful language and delightful design bring the alphabet to life, enchanting children and adults alike. Put your hands in your pockets and take a peek at P, and find out why K is the funniest letter of all.
             </Card.Text>
+            <a href="https://www.amazon.com/gp/product/0997094222" target="-blank">
+            <Card.Footer className="btn btn-outline-success" as="h5">
+              Now available at Amazon!
+            </Card.Footer>
+            </a>
           </Card.Body>
         </Card>
       </Col>
@@ -30,7 +39,10 @@ const AboutPage = () => (
         <Card className="mt-5">
           <Card.Body>
             <Card.Header as="h5">About The Author</Card.Header>
-            <Card.Img variant="bottom" src={mfl4} />
+            <Img 
+              fluid={data.mfl4GatsbyImage.childImageSharp.fluid}
+              alt="My Favorite Letter B"
+              />
             <Card.Text className="mt-3">
               Susan Gilpin is a writer and imaginative entrepreneur, creator of Bespoke Bingo, the Perpetual Calendar of Endless Possibilities, and When I Retire at Night. She lives in Portland, Oregon with a cat named Casey.
             </Card.Text>
@@ -45,3 +57,24 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+
+export const query = graphql `
+  query {
+    mfl3GatsbyImage: file(relativePath: {eq: "mfl-3.jpg"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mfl4GatsbyImage: file(relativePath: {eq: "mfl-4.jpg"}) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

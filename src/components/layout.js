@@ -31,9 +31,14 @@ const Layout = ({ children }) => {
         <Container className="p-3">{children}</Container>
       </main>
       <footer className="footer py-3">
-        <i class="fab fa-facebook-f mr-3"></i>
-        <i class="fab fa-instagram-square mr-3"></i>
-        <i class="fas fa-envelope-open"></i>
+        <i class="fab fa-facebook-f fa-2x mr-3"></i>
+        <i class="fab fa-instagram-square fa-2x mr-3"></i>
+        <i class="fas fa-envelope-open fa-2x"></i>
+        <div className="container mt-4" id="koa">
+          <h6>built by</h6> <a href="https://musing-lewin-5a9490.netlify.app/" target="-blank">
+          <i class="fas fa-code"></i><h6>KoaScript</h6><i class="fas fa-cat"></i>
+           </a>
+        </div>
       </footer>
     </>
   );
