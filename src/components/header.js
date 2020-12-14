@@ -4,25 +4,20 @@ import React from "react";
 import { Button, Navbar, Nav, NavItem } from "react-bootstrap";
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="primary" variant="dark" expand="lg">
+  <Navbar className="sticky-top" expand="sm">
     <Navbar.Brand as={Link} href="/">
-      {siteTitle}
+      <h2 className="ml-3">My Favorite Letter</h2>
     </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+    
+    
       <Nav className="mr-auto">
         <NavItem href="/about">
           <Nav.Link as={Link} activeClassName="active" to="/about">
-            About
+            <h3 className="ml-3">About</h3>
           </Nav.Link>
         </NavItem>
       </Nav>
-      <Nav className="ml-auto">
-        <Button variant="success" onClick={() => alert("Sign Up")}>
-          Sign Up
-        </Button>
-      </Nav>
-    </Navbar.Collapse>
+    
   </Navbar>
 );
 

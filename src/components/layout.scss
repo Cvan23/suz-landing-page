@@ -9,6 +9,28 @@
 
 // @import "~bootswatch/dist/superhero/variables";
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 // @import "~bootswatch/dist/superhero/bootswatch";
 
 // Add other customizations below.
+
+body {
+  background-image: linear-gradient( to left, #e6f60675,
+  #13810467, #0440a0a9);
+}
+
+.navbar {
+  background-color: rgba(3, 182, 27, 0.904);
+}
+
+.footer {
+  position: fixed;
+   bottom:0;
+   width:100%;
+   height:50px;
+}
+
+h2, h3 {
+  font-family: 'Courgette', cursive;
+  color: white
+}
