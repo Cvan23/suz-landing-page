@@ -46,9 +46,9 @@ const Layout = ({ children }) => {
           </a>
         </div>
         <div className="container mt-4" id="koa">
-          <h6>built by</h6> <a href="https://musing-lewin-5a9490.netlify.app/" target="-blank">
-          <i class="fas fa-code"></i><h6>KoaScript</h6><i class="fas fa-cat"></i>
-           </a>
+          <h6>built by</h6> <a href="https://koa-script.netlify.app/" target="-blank">
+            <i class="fas fa-code"></i><h6>KoaScript</h6><i class="fas fa-cat"></i>
+          </a>
         </div>
       </footer>
     </>
