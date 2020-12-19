@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container, Row } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import {graphql} from "gatsby";
@@ -12,10 +12,12 @@ import Img from "gatsby-image";
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <Card className="mt-5">
+    <Container>
+    <div className="col col-xl-10 m-auto">
+    <Card className="mt-2">
       <Card.Body>
         <a href="https://www.amazon.com/gp/product/0997094222" target="-blank">
-        <Card.Header className="btn btn-outline-success" as="h5">
+        <Card.Header className="btn btn-block" as="h2">
           Now available at Amazon!
         </Card.Header>
         </a>
@@ -25,6 +27,8 @@ const IndexPage = ({data}) => (
         alt="My Favorite Letter"
         />
     </Card>
+    </div>
+    </Container>
   </Layout>
 );
 
