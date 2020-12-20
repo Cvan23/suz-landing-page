@@ -61,3 +61,26 @@ h2, h3 {
   font-size: 1.75rem;
   box-shadow: 2px 4px 5px  #0440a0;
 }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators {
+  filter: invert(1);
+}
+
+.carousel-control-next-icon {
+  margin-left: auto;
+}
+
+.carousel-control-prev-icon {
+  margin-right: auto;
+}
+
+.modal-footer, .modal-header {
+  background-image: linear-gradient( to left, #e6f606,
+  #138104, #0440a0);
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  box-shadow: 1px 3px 4px  #0440a091;
+}
+
