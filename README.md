@@ -4,7 +4,7 @@
 
 ### This site can be viewed live at [My Favorite Letter](https://www.myfavorite-letter.com)
 
-This is a basic starter for [GatsbyJS](https://www.gatsbyjs.org/), featuring [react-bootstrap](https://react-bootstrap.github.io/) and little else.
+This was created using a basic starter for [GatsbyJS](https://www.gatsbyjs.org/), featuring [react-bootstrap](https://react-bootstrap.github.io/) and little else.
 
 
 
